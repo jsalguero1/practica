@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">name</th>
+      <th scope="col">channel</th>
+      <th scope="col">seasons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serie of series">
+      <th scope="row">{{ serie.id }}</th>
+      <td>{{ serie.name }}</td>
+      <td>{{ serie.channel }}</td>
+      <td>{{ serie.seasons }}</td>
+    </tr>
+  </tbody>
+</table>
