@@ -9,7 +9,7 @@ import { Serie } from './serie.model';
 })
 export class SerieService {
 
-  private apiUrl = environment.BaseUrl + 'series';
+  private apiUrl = environment.BaseUrl + 'series.json';
 
   constructor(private http: HttpClient) { }
 
