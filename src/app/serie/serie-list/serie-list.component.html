@@ -20,7 +20,7 @@
     <tr *ngFor="let serie of series">
       <th scope="row">{{ serie.id }}</th>
       <td>
-        <a href="#">
+        <a href="#" (click)="onSelected(serie)">
           {{serie.name}}
         </a>
       </td>
@@ -29,5 +29,18 @@
     </tr>
   </tbody>
 </table>
+
+<h2>Promedio</h2>
+
+<div>
+  Promedio de temopradas: {{getPromedio()}}
+</div>
+
+<h2>Detalle</h2>
+
+<div *ngIf="selected">
+  <app-serie-detail [serieDetail]="selectedSerie"> </app-serie-detail>
+</div>
+
 
 
